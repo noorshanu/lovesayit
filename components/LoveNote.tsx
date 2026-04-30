@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 interface LoveNoteProps {
@@ -16,7 +16,7 @@ I miss us. ❤️`;
 export default function LoveNote({ onNext }: LoveNoteProps) {
   const characters = Array.from(noteText);
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -24,7 +24,7 @@ export default function LoveNote({ onNext }: LoveNoteProps) {
     }),
   };
 
-  const child = {
+  const child: Variants = {
     visible: {
       opacity: 1,
       y: 0,
