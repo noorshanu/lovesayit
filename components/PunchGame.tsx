@@ -66,7 +66,8 @@ export default function PunchGame() {
               <p className="text-pink-700 mb-8">Click the image to punch!</p>
               
               <div 
-                className="relative w-64 h-64 md:w-80 md:h-80 cursor-crosshair rounded-full overflow-hidden shadow-2xl bg-white border-4 border-red-200"
+                className="relative w-80 h-80 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden shadow-2xl bg-white border-4 border-red-200"
+                style={{ cursor: "url('/punchgame/gloves.png') 32 32, crosshair" }}
                 onClick={handlePunch}
               >
                 <img 
@@ -109,7 +110,7 @@ export default function PunchGame() {
               transition={{ type: "spring", bounce: 0.5 }}
               className="flex flex-col items-center"
             >
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl bg-white border-4 border-pink-300 mb-8">
+              <div className="w-80 h-80 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden shadow-2xl bg-white border-4 border-pink-300 mb-8">
                 <img 
                   src="/punchgame/finalpunch.png" 
                   alt="Beaten Up Guy" 
